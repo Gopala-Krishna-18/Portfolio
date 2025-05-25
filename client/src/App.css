@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Neon glow effects */
+.neon-hover-glow:hover {
+  box-shadow: 0 0 16px 2px rgba(79, 70, 229, 0.4), 0 0 32px 4px rgba(79, 70, 229, 0.2);
+}
+
+.dark .neon-hover-glow:hover {
+  box-shadow: 0 0 24px 4px rgba(139, 92, 246, 0.4), 0 0 48px 8px rgba(139, 92, 246, 0.2);
+}
+
+.neon-text {
+  text-shadow: 0 0 8px rgba(79, 70, 229, 0.4), 0 0 16px rgba(79, 70, 229, 0.2);
+}
+
+.dark .neon-text {
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.4), 0 0 24px rgba(139, 92, 246, 0.2);
+}
+
+/* Hobby card animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hobby-card {
+  animation: float 3s ease-in-out infinite;
+}
+
+.hobby-card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.hobby-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.hobby-card:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.hobby-card:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+/* Hobby icon animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hobby-icon {
+  animation: pulse 2s ease-in-out infinite;
+}

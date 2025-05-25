@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.neon-glow {
+  box-shadow: 0 0 16px 2px #00fff7, 0 0 32px 4px #00fff7;
+}
+.dark .neon-glow {
+  box-shadow: 0 0 24px 4px #ff00e6, 0 0 48px 8px #ff00e6;
+}
+
+.neon-text {
+  text-shadow: 0 0 8px #00fff7, 0 0 16px #00fff7;
+}
+.dark .neon-text {
+  text-shadow: 0 0 12px #ff00e6, 0 0 24px #ff00e6;
+}
+
+.neon-hover-glow:hover {
+  box-shadow:
+    0 0 8px 2px #00fff7,
+    0 0 24px 8px #00fff7,
+    0 0 0 4px #fff inset; /* subtle white inner for contrast */
+}
+.dark .neon-hover-glow:hover {
+  box-shadow:
+    0 0 24px 4px #ff00e6,
+    0 0 48px 8px #ff00e6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
