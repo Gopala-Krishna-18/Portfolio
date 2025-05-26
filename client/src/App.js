@@ -315,7 +315,6 @@ function Showcase() {
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
-  const [showMediaViewer, setShowMediaViewer] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
